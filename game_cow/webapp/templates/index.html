@@ -1,0 +1,7 @@
+<p>Guess 4 numbers. Enter the nums separated by coma:</p>
+            <form method="POST" action="/">
+                {% csrf_token %}
+                <input type="text" name="numbers"/>
+                <input type="submit" value="Send"/>
+            </form>
+<div>{{ result }}</div>
